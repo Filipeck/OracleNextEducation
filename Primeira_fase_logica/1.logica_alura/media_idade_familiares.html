@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Idade Familiares</title>
+</head>
+
+<body>
+    <script>
+
+        function pulaLinha() {
+
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var totalFamilia = Number(prompt("Quantidade de pessoas: "));
+        var contador = 1;
+        var somaIdades = 0;
+
+        while (contador <= totalFamilia) {
+            var idade = Number(prompt("Informe idade do familiar: "));            
+            somaIdades = somaIdades + idade; 
+            contador++
+        }
+
+        var mediaIdades = somaIdades / totalFamilia;
+        mostra("A média da idade da sua família é de: " + mediaIdades);
+    </script>
+</body>
+
+</html>

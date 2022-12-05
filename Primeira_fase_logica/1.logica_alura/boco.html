@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocozona</title>
+</head>
+
+<body>
+    <script>
+
+        function pulaLinha() {
+            // pulando duas linhas
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write("<big>" + frase + "</big>");
+            pulaLinha();
+        }
+
+        var resposta = ""; // ainda não tem a resposta
+
+        while (true) {
+
+            resposta = prompt("Quem você ama mais que tudo?");
+
+            if (resposta == "Filipinho") {
+                alert("Nhowwwwwn, te amo bocó!")
+                break;
+            }
+        }
+
+        mostra("FIM");
+    </script>
+</body>
+
+</html>
