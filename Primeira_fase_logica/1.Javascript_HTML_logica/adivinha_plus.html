@@ -43,6 +43,7 @@
         function sorteiaNumeros(quantidade) {
 
             var segredos = [];
+            console.log(segredos.length)
 
             var numero = 1;
 
@@ -73,7 +74,7 @@
 
         }
 
-        var segredos = sorteiaNumeros(3);
+        var segredos = sorteiaNumeros(prompt("Informe quantos números serão sorteados de 1 a 10 e tente adivinhá-los: "));
 
         var input = document.querySelector("input");
         input.focus();
