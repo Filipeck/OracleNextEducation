@@ -7,9 +7,34 @@
     <title>Programa</title>
 </head>
 <body>
+    <canvas width="600px" height="400px">
+
+    </canvas>
 
     <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
         
+        pincel.fillStyle = 'lightgray';
+        pincel.fillRect(0, 0, 600, 400); //coordenada X, coordenada Y
+        
+        pincel.fillStyle = 'green';
+        pincel.fillRect(0, 0, 200, 400);
+
+        pincel.fillStyle = 'red';
+        pincel.fillRect(400, 0 , 200, 400);
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.moveTo(300, 175); //ponto inicial
+        pincel.lineTo(225, 325); //do ponto inicial até a ponta direita
+        pincel.lineTo(375, 325); // da direita até a ponta esquerda
+        pincel.fill();
+
+        pincel.fillStyle = 'yellow';
+        pincel.beginPath();
+        pincel.arc(300, 175, 50, 0, 2 * 3.14);
+        pincel.fill();
     </script>
 </body>
 </html>
