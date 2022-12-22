@@ -9,32 +9,45 @@
 </head>
 
 <body>
-    <h1>Desenha circulos na tela</h1>
+    <h1>Desenhe circulos na tela!</h1>
+    <p>Dica: use o botão direito do mouse para mudar a cor do círculo. :)</p>
 
     <canvas width="600px" height="400px">
 
     </canvas>
 
     <script>
+        //canvas
         var tela = document.querySelector('canvas');
         var pincel = tela.getContext('2d');
-
         pincel.fillStyle = 'grey';
         pincel.fillRect(0, 0, 600, 400);
 
+        //cores circulo
+        var cores = ['blue', 'red', 'green', 'yellow', 'white']
+        var indiceCorAtual = 0;
+
+       //desenhar circulos no canvas 
         function desenhaCirculo(evento) {
             var x = evento.pageX - tela.offsetLeft;
             var y = evento.pageY - tela.offsetTop;
-
-            pincel.fillStyle = "red";
+            pincel.fillStyle = cores[indiceCorAtual];
             pincel.beginPath();
             pincel.arc(x, y, 10, 0, 2 * 3.14);
             pincel.fill();
-
-            console.log("posição do clique : " + x + ", " + y);
+            console.log(x + ',' + y);
         }
-
         tela.onclick = desenhaCirculo;
+
+        //mudar cores dos circulos
+        function mudaCor() {
+            indiceCorAtual++;
+            if (indiceCorAtual >= cores.length) {
+                indiceCorAtual = 0; // volta para a primeira cor, azul
+            }
+            return false; // para não exibir o menu padrão do canvas
+        }
+        tela.oncontextmenu = mudaCor;
     </script>
 </body>
 
