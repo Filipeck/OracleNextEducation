@@ -1,0 +1,19 @@
+body{
+    background-color: #CCC;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em{    
+    font-size: 1.25rem;
+}
+
+em strong{
+    color: red;
+}
