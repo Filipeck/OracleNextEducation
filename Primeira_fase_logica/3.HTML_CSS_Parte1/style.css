@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+.titulo-principal{
+    padding-left: 1.25rem;
+}
+
 figure{
     display: inline-block;
     margin: 0;
@@ -17,7 +21,7 @@ figure{
     padding: 1.875rem;
 }
 
-h1,h2{
+.titulo-centralizado{
     text-align: center;
 }
 
