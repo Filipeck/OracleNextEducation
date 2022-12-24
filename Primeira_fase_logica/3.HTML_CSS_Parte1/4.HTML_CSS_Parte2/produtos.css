@@ -6,7 +6,10 @@ html *{
 
 header{
     background-color: #BBB;
-    padding: 20px 0;
+    padding: 20px 0;    
+    box-sizing:border-box;
+    border: 5px solid #000;
+    border-radius: 7.5%;
 }
 
 .cabecalho{
@@ -32,4 +35,38 @@ nav a{
     font-size: 1.375rem;
     text-decoration: none;
     color: #000;
+}
+
+.produtos{
+    width: 940px;
+    margin: auto;
+    padding: 3.125rem 0;
+}
+
+.produtos li{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.50%;    
+    padding: 1.5rem 1.25rem;
+    border: solid #000;
+    border-width: 12px 2px 12px 2px;
+    border-radius: 10%;
+}
+
+.produtos h2{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 1.125rem;
+}
+
+.preco{
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-top: 0.625rem;
 }
