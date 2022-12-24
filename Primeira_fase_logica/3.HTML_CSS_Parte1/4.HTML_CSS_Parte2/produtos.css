@@ -4,6 +4,7 @@ html *{
     font-size: 16px;
 }
 
+/*=========CSS Header========*/
 header{
     background-color: #BBB;
     padding: 20px 0;    
@@ -41,6 +42,7 @@ nav a:hover {
     color: #C78C19;
 }
 
+/*=======CSS Main============*/
 .produtos{
     width: 940px;
     margin: auto;
@@ -90,4 +92,18 @@ nav a:hover {
     font-size: 1.375rem;
     font-weight: bold;
     margin-top: 0.625rem;
+}
+
+/*=====CSS Footer======*/
+
+footer{
+    background-image: url(./images/bg.jpg);
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.copyright{
+    color: #FFF;
+    font-size: 0.8rem;
+    margin-top: 1.25rem;
 }
