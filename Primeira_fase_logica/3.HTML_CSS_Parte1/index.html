@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,41 +9,65 @@
     <meta name="content" content="Projeto base do curso de HTML e CSS da Alura, 1ª parte">
     <title>Barbearia Alura</title>
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style-home.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="titulo-principal">Barbearia Alura</h1>
+    <header style="border-radius: 0;">
+        <div class="cabecalho">
+            <h1>
+                <img src="./images/logo.png" alt="logo alura">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./produtos.html">Produtos</a></li>
+                    <li><a href="./contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <figure>
         <img src="./images/banner.jpg" alt="imagem de uma barbearia" id="banner">
     </figure>
 
-    <div class="principal">
-        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+    <main>
+        <section class="principal">
+            <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 
-        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba.
-            Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor
+                para o seu cabelo e barba.
+                Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a
+                cada dia.</p>
 
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+                        clientes"</strong>.</em></p>
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-    </div>
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
+                padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
 
-    <div class="beneficios">
-        <h3 class="titulo-centralizado">Benefícios</h3>
-        <ul>
-            <li class="itens">Atendimento ao cliente</li>
-            <li class="itens">Espaço diferenciado</li>
-            <li class="itens">Localização privilegiada</li>
-            <li class="itens">Profissionais qualificados</li>
-        </ul>
+        <section class="beneficios">
+            <h3 class="titulo-centralizado">Benefícios</h3>
+            <ul>
+                <li class="itens">Atendimento ao cliente</li>
+                <li class="itens">Espaço diferenciado</li>
+                <li class="itens">Localização privilegiada</li>
+                <li class="itens">Profissionais qualificados</li>
+            </ul>
 
-        <figure>
-            <img src="./images/beneficios.jpg" alt="imagem de um homem tendo a sua barba tratada" class="imagem-beneficios">
-        </figure>
-    </div>
+            <figure>
+                <img src="./images/beneficios.jpg" alt="imagem de um homem tendo a sua barba tratada"
+                    class="imagem-beneficios">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./images/logo-branco.png" alt="logo alura com preenchimento em branco">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
 </body>
 
 </html>
