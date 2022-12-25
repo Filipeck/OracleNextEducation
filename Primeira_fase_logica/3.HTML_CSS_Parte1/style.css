@@ -136,3 +136,21 @@ form label, form legend{
     margin: 1.25rem 0;
     margin-right: 0.6rem;
 }
+
+.enviar{
+    width: 40%;
+    padding: 1rem 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.3rem;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: rgb(255, 89, 0);
+    transform: scale(1.2);
+}
