@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .produtos li:hover h2{
-    font-size: 2rem;
+    font-size: 1.875rem;
     color: #C78C19;
 }
 
@@ -81,7 +81,7 @@ nav a:hover {
 }
 
 .produtos h2{
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
@@ -107,6 +107,13 @@ footer{
     color: #FFF;
     font-size: 0.8rem;
     margin-top: 1.25rem;
+}
+
+/*======Main Contatos======*/
+
+#main-contatos{
+    width: 940px;
+    margin: 0 auto;
 }
 
 /*=======Formulário=======*/
