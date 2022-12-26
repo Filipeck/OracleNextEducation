@@ -28,7 +28,7 @@ nav{
 
 nav li{
     display: inline;
-    margin: 0 0 0 0.9375rem;
+    margin: 0 0 0 0.85rem;
 }
 
 nav a{
@@ -277,4 +277,23 @@ th, td{
 .video{
     width: 560px;
     margin: 2rem auto;
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+        margin-bottom: 3px;
+    }
 }
