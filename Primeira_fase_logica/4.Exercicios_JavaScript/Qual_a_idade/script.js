@@ -15,39 +15,40 @@ function verificar(){
             genero = 'Homem'
             if(idade >= 0 && idade < 10){
                 //Criança
-                img.setAttribute('src', './images/menino_4')
+                img.setAttribute('src', './images/menino_4.jpg')
             }else if(idade < 21){
                 //jovem
-                img.setAttribute('src', './images/jovem_H')
+                img.setAttribute('src', './images/jovem_H.jpg')
             }else if(idade < 40){
                 //jovem adulto
-                img.setAttribute('src', './images/adulto_H')
+                img.setAttribute('src', './images/adulto_H.jpg')
             }else if(idade < 60){
                 //adulto
-                img.setAttribute('src', './images/adulto2_H')
+                img.setAttribute('src', './images/adulto2_H.jpg')
             }else{
                 //idoso
-                img.setAttribute('src', './images/idoso_H')
+                img.setAttribute('src', './images/idoso_H.jpg')
             }
         } else{
             genero = 'Mulher'
             if(idade >= 0 && idade < 10){
                 //Criança
-                img.setAttribute('src', './images/menina_4')
+                img.setAttribute('src', './images/menina_4.jpg')
             }else if(idade < 21){
                 //jovem
-                img.setAttribute('src', './images/jovem_M')
+                img.setAttribute('src', './images/jovem_M.jpg')
             }else if(idade < 40){
                 //jovem adulto
-                img.setAttribute('src', './images/adulta_M')
+                img.setAttribute('src', './images/adulta_M.jpg')
             }else if(idade < 60){
                 //adulto
-                img.setAttribute('src', './images/adulta2_M')
+                img.setAttribute('src', './images/adulta2_M.jpg')
             }else{
                 //idoso
-                img.setAttribute('src', './images/idosa_M')
+                img.setAttribute('src', './images/idosa_M.jpg')
             }
         }
-        resultado.innerHTML = genero + idade
+        resultado.innerHTML = `Detectamos ${genero} com ${idade} anos!`
+        resultado.appendChild(img);
     }
 }
