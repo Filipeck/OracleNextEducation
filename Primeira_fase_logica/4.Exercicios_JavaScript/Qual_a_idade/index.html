@@ -14,7 +14,18 @@
     </header>
     <main>
         <div>
-            
+            <p>Ano de Nascimento:
+                <input type="number" name="ano" id="ano" min="0" max="100">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
         <div id="res">
             
@@ -23,6 +34,6 @@
     <footer>
         <p>&copy; Filipe Cayres</p>
     </footer>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
 </body>
 </html>
