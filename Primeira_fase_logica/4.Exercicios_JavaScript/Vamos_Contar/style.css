@@ -1,0 +1,42 @@
+html{    
+    font: normal 16px Arial;
+    color: white;
+}
+
+body{
+    background: rgb(0, 136, 255);
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    color: rgb(0, 136, 255);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 31rem;
+    height: 25rem;
+    margin: auto;
+    box-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.355);
+}
+
+#msg{
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+}
+
+#img{
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.356);
+}
