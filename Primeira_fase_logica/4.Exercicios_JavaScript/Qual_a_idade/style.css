@@ -22,6 +22,10 @@ main{
     box-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.355);
 }
 
+main > div{
+    text-align: center;
+}
+
 #msg{
     text-align: center;
     padding: 0.2rem;
@@ -30,9 +34,16 @@ main{
 
 #img{
     display: block;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
+    margin-top: 5px;
+}
+
+#res{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 footer{
