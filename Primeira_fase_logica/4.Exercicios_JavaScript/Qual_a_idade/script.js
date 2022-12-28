@@ -12,7 +12,7 @@ function verificar(){
         let img = document.createElement('img')
         img.setAttribute('id', 'img')
         if(fsex[0].checked){
-            genero = 'Homem'
+            genero = 'um Homem'
             if(idade >= 0 && idade < 10){
                 //Criança
                 img.setAttribute('src', './images/menino_4.jpg')
@@ -30,7 +30,7 @@ function verificar(){
                 img.setAttribute('src', './images/idoso_H.jpg')
             }
         } else{
-            genero = 'Mulher'
+            genero = 'uma Mulher'
             if(idade >= 0 && idade < 10){
                 //Criança
                 img.setAttribute('src', './images/menina_4.jpg')
@@ -48,7 +48,7 @@ function verificar(){
                 img.setAttribute('src', './images/idosa_M.jpg')
             }
         }
-        resultado.innerHTML = `Detectamos ${genero} com ${idade} anos!`
+        resultado.innerHTML = `Você é ${genero} com ${idade} anos!`
         resultado.appendChild(img);
     }
 }
