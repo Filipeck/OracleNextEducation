@@ -29,8 +29,8 @@ main{
     margin: 0.5rem auto;
 }
 
-select#lista{
-    margin: 5px 0;
+select#list{
+    margin: 5px 0 0;
     width: 150px;
 }
 
